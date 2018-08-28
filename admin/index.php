@@ -47,7 +47,7 @@ require "../credentials.php";
       <a class="nav-link" href="/index.php">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="admin.php">Admin</a>
+      <a class="nav-link active" href="/admin/index.php">Admin</a>
     </li>
   </ul>
 </div>

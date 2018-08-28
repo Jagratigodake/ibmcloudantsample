@@ -54,7 +54,7 @@ $teammembers = "";
       <a class="nav-link active" href="/index.php">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="admin.php">Admin</a>
+      <a class="nav-link" href="/admin/index.php">Admin</a>
     </li>
   </ul>
 </div>
