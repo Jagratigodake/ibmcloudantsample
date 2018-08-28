@@ -100,6 +100,6 @@ In this how-to guide you learned how to:
 - Deploying application using IBM Cloud CLI.
 
 # References
-- Video on Getting Started to Cloudant
-- IBM Cloudant Documentation
+- ![Video on Getting Started to Cloudant](https://www.youtube.com/watch?v=BpQYOn8AVo0)
+- ![IBM Cloudant Documentation](https://developer.ibm.com/clouddataservices/docs/cloudant/)
 
