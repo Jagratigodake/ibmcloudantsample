@@ -1,7 +1,3 @@
-<?php
-$teamname = "";
-$teammembers = "";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
