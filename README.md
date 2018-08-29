@@ -23,36 +23,76 @@ Deploying local code to the PHP service using IBM Cloud CLI.
 
 # Create a PHP Service
 1. Go to **Catalog** from IBM Cloud homepage.
+![Go To Catalog](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss1.png)
+
 2. Select **Compute**.
+![Click Compute](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss2.png)
+
 3. Scroll down to **PHP** Service.
+![Find and Select PHP Service](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss3.png)
+
 4. After giving suitable app name and hostname click **Create** button to create a PHP Service.
+![Click Create Button](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss4.png)
+
 5. Once the service is running you can access it by clicking **Visit App URL**.
+![Click Visit App URL](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss5.png)
 
 # Create Cloudant Service and Generating Credentials
 1. Go to **Catalog** from IBM Cloud homepage.
+
 2. Select **Databases**.
+![Select Databases](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss6.png)
+
 3. Click **Cloudant** tile.
+![Click Cloudant](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss7.png)
+
 4. After giving suitable Service Name, in available authentication methods select **Use both legacy credentials and IAM** and then click **Create** button below to create the DB instance.
+![Click Create](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss8.png)
+
 5. Once the service is created you can access the Cloudant Dashboard by clicking **LAUNCH CLOUDANT DASHBOARD** button.
+![Launch Cloudant Dashboard](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss9.png)
+
 6. For creating service credentials select **Service Credentials**.
+![Select Service Credentials](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss10.png)
+
 7. Click on **New Credentials** Button.
+![Click New Credentials](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss11.png)
+
 8. After giving suitable name to credentials, click **Add** button. This will generate credentials with the given name which will be used later to communicate with the DB.
+
 9. Go to **Manage** and **Launch Cloudant Dashboard**, this will take you to cloudant dashboard. From here you can completely manage your database instance.
+![Launch Cloudant Dashboard](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss12.png)
+
 10. Go to **Databases**.
+![Go To Databases](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss13.png)
+
   * You will not be able to see any databases there when you open it for the first time.
   * For this application we will be creating
+  
 11. Click **Create Database**.
+![Create Database](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss14.png)
+
 12. After giving suitable name for database click **Create** button.
+![Click Create](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss15.png)
+
 13. Click on the database which you have created to open the database
+![Go on Database Name](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss16.png)
+
 14. Go to Plus Icon near **Design Documents** and Click **New Search Index**
+![Click New Search Index](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss17.png)
+
 15. After giving suitable name to design document and search index, create following function definition in Search index Function:
   ```
   function (doc) {
   index("username", doc.username);
   }
   ```
+![Put Function Defination](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss18.png)
+
   * This creates a search index for the database. We will be using this search index to check if the username already exists in the DB or not.
+  
 16. Scroll down and click **Create Document and Build Index**
+![Click Create Document and Build Index](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss19.png)
 
 # Cloning Sample Repo
 1. Accessing Git CLI
@@ -60,6 +100,8 @@ Deploying local code to the PHP service using IBM Cloud CLI.
   - For Linux and Mac Users: Open Terminal
 2. Use the following command to clone the sample repository
   - $ git clone https://github.com/Ritwikjoshi/ibmcloudantsample
+  
+![Clone the Repository](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss20.png)  
   
 # Modifying Sample Code
 1. Open Credentials.php file in the cloned folder.
@@ -75,6 +117,8 @@ Deploying local code to the PHP service using IBM Cloud CLI.
   ```
   $ ibmcloud -v
   ```
+![Go To Catalog](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss21.png)
+
 3. Login to IBM Cloud
   ```
   $ ibmcloud login
@@ -91,7 +135,11 @@ Deploying local code to the PHP service using IBM Cloud CLI.
   ```
   - After setting the API Endpoint repeat step 4.
 5. Once the Pushing is complete you’ll see app status as running on your command line.
+![Check Running Status](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss22.png)
+
+* If you don't see the status as running then the push was not successful. In such case, you need to repeat the **Step4**.
 6. You can check access the running application through the endpoint shown in the status.
+![Access the application through endpoint](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss23.png)
 
 # Summary
 In this how-to guide you learned how to:
