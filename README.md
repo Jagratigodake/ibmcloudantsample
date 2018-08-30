@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 This guide shows you how can you create and deploy a PHP web application on IBM Cloud and connect and manage a Cloudant database instance on IBM Cloud.
-You will also learn how to fetch the required data from cloudant using search index queries.
+You will also learn how to fetch the required data from Cloudant using search index queries.
 
 ## Prerequisites
 - An IBM Cloud Account. (You can create one here, and get 30 days free trial)
@@ -10,10 +10,10 @@ You will also learn how to fetch the required data from cloudant using search in
 - GIT Command Line Interface
 
 ## Estimated Time
-These steps will take you approximately 60 minutes.This does not include creating an IBM Cloud account(if you don’t have one) or downloading the IBM Cloud CLI. It includes 10 minutes for creating cloudant service and generating credentials. Creating and the initial starting of PHP Service instance takes 10 minutes. Cloning the sample code and doing the modifications can take you around 15-25 minutes. Deploying the code to the PHP Service using IBM Cloud CLI can take 10 minutes.
+These steps will take you approximately 60 minutes. This does not include creating an IBM Cloud account(if you don’t have one) or downloading the IBM Cloud CLI. It includes 10 minutes of creating Cloudant service and generating credentials. Creating and the initial starting of PHP Service instance takes 10 minutes. Cloning the sample code and doing the modifications can take you around 15-25 minutes. Deploying the code to the PHP Service using IBM Cloud CLI can take 10 minutes.
 
 ## Steps
-In this guide you will perform following steps:
+In this guide you will perform the following steps:
 Create a Cloudant Service on IBM Cloud and generate credentials.
 Creating Database and Search Index in Cloudant DB
 Creating a PHP Service on IBM Cloud.
@@ -58,9 +58,9 @@ Deploying local code to the PHP service using IBM Cloud CLI.
 7. Click on **New Credentials** Button.
 ![Click New Credentials](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss11.png)
 
-8. After giving suitable name to credentials, click **Add** button. This will generate credentials with the given name which will be used later to communicate with the DB.
+8. After giving the suitable name to credentials, click **Add** button. This will generate credentials with the given name which will be used later to communicate with the DB.
 
-9. Go to **Manage** and **Launch Cloudant Dashboard**, this will take you to cloudant dashboard. From here you can completely manage your database instance.
+9. Go to **Manage** and **Launch Cloudant Dashboard**, this will take you to Cloudant dashboard. From here you can completely manage your database instance.
 ![Launch Cloudant Dashboard](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss12.png)
 
 10. Go to **Databases**.
@@ -72,7 +72,7 @@ Deploying local code to the PHP service using IBM Cloud CLI.
 11. Click **Create Database**.
 ![Create Database](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss14.png)
 
-12. After giving suitable name for database click **Create** button.
+12. After giving a suitable name for database click **Create** button.
 ![Click Create](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss15.png)
 
 13. Click on the database which you have created to open the database
@@ -96,7 +96,7 @@ Deploying local code to the PHP service using IBM Cloud CLI.
 
 # Cloning Sample Repo
 1. Accessing Git CLI
-  - For windows Users: Open Git CMD
+  - For Windows Users: Open Git CMD
   - For Linux and Mac Users: Open Terminal
 2. Use the following command to clone the sample repository
   - $ git clone https://github.com/Ritwikjoshi/ibmcloudantsample
@@ -113,13 +113,13 @@ Deploying local code to the PHP service using IBM Cloud CLI.
 1. Accessing IBM Cloud CLI
   - For Windows Users: Open Windows Command Prompt
   - For Linux and Mac Users: Open Terminal
-2. For Confirming the installation of Ibmcloud cli use the following command:
+2. For Confirming the installation of Ibmcloud CLI use the following command:
   ```
   $ ibmcloud -v
   ```
 ![Go To Catalog](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss21.png)
 
-3. Login to IBM Cloud
+3. Log in to IBM Cloud
   ```
   $ ibmcloud login
   ```
@@ -137,7 +137,7 @@ Deploying local code to the PHP service using IBM Cloud CLI.
 5. Once the Pushing is complete you’ll see app status as running on your command line.
 ![Check Running Status](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss22.png)
 
-* If you don't see the status as running then the push was not successful. In such case, you need to repeat the **Step4**.
+* If you don't see the status as running then the push was not successful. In such a case, you need to repeat the **Step4**.
 6. You can check access the running application through the endpoint shown in the status.
 ![Access the application through endpoint](https://github.com/Ritwikjoshi/ibmcloudantsample/blob/master/src/images/screenshots/ss23.png)
 
